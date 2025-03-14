@@ -3,7 +3,10 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
 body {
     position: relative;
     display: flex;
@@ -14,14 +17,67 @@ body {
 menu {
     display: flex;
     flex-direction: column;
+    
 }
 
 menu > p {
     padding: 10px;
 }
 
-div {position: absolute;
-    left: 50%;
-    top: 50%;
+div.icronall {
+    position: absolute;
+    left: 54%;
+    top: 20%;
     transform: translate(-50%);
+}
+
+div.icronbt {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.icrontxt > p {display: inline;}
+
+div.icronbt > p {
+    display: inline;
+    margin-top: 10px;
+}
+
+
+p#icron {font-size: 100px;}
+p#icronsec {font-size: 30px;}
+p#istart, p#ipause, p#istop {
+    font-size: 35px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+p#istart {
+    background: rgb(51, 103, 245);
+    padding: 12px 0px 0px 6px;
+    color: white;
+}
+
+p#ipause {
+    color: rgb(51, 103, 245);
+    border: 4px solid gray;
+    padding-top: 6px;
+}
+
+p#istop {
+    color: rgb(51, 103, 245);
+    border: 4px solid gray;
+    padding-top: 10px;
+}
+
+p#istart:hover {
+    background: rgb(45, 91, 216);
+    cursor: pointer;
+}
+
+p#ipause:hover, p#istop:hover {
+    background: rgb(235, 235, 235);
+    cursor: pointer;
 }
