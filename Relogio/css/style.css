@@ -15,18 +15,31 @@ body {
 }
 
 menu {
-    display: flex;
-    flex-direction: column;
-    
+    border-right: 1px solid gray;
 }
 
-menu > p {
-    padding: 10px;
+img.mimg {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0px -10px 0px;
 }
+
+div.mtxt > a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0px 30px 10px 10px;
+}
+
+div.mtxt > a:hover {
+    background: rgb(216, 216, 216);
+}
+
+iframe {width: 1204px;}
 
 div.icronall {
     position: absolute;
-    left: 54%;
+    left: 50%;
     top: 20%;
     transform: translate(-50%);
 }

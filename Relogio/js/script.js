@@ -38,7 +38,7 @@ function startcr() {
             time.innerHTML = `${hour}:${min}:${sec}`
         }
 
-    }, 1)
+    }, 10)
 }
 
 function pausecr(){
