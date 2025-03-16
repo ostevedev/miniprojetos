@@ -15,20 +15,31 @@ body {
 }
 
 menu {
+    display: flex;
     border-right: 1px solid gray;
 }
 
-img.mimg {
+div.mimg {
+    display: none;
+    width: 42px;
+}
+
+a > img {
     width: 30px;
     height: 30px;
-    margin: 10px 0px -10px 0px;
+    margin: 6px 0px 0px 5px;
+}
+
+a > img:hover {
+    background: rgb(216, 216, 216);
+    cursor: pointer;
 }
 
 div.mtxt > a {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 0px 30px 10px 10px;
+    padding: 12px 40px 10px 10px;
 }
 
 div.mtxt > a:hover {
