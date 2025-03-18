@@ -43,8 +43,10 @@ div.mtxt > a {
 }
 
 div.mtxt > a:hover {
-    background: rgb(216, 216, 216);
+    background: rgb(228, 228, 228);
 }
+
+div.mtxt > a:active {background: rgb(211, 211, 211);}
 
 iframe {width: 1204px;}
 

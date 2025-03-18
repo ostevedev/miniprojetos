@@ -13,5 +13,5 @@ function hour(){
         hour = "0"+date.getHours()
     } let thour = document.getElementById("icron")
     thour.innerHTML = `${hour}:${min}:${sec}`
-}, 1000)
+}, 100)
 }
