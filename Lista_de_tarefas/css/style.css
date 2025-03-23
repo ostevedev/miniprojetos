@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(238, 238, 238);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+input#iadd {
+    height: 100px;
+    font-size: 1.6em;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+input#ibadd {
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px; 
+    font-size: 1.1em;
+}
+
+main {
+    display: flex;
+    width: 90%;
+    flex-flow: row wrap;
+    margin: auto;
+    padding-top: 15px;
+    border: 1px solid red;
+}
+
+#iitem {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: white;
+}
+
+.itemicon {
+    flex: 10%;
+}
+
+.itemname {
+    flex: 75%;
+}
+
+.itembuttom {
+    flex: 15%;
+}
