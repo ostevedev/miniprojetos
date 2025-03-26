@@ -65,6 +65,7 @@ main {
 
 .itemicon {
     flex: 10%;
+    text-align: center;
 }
 
 .itemname {
