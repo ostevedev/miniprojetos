@@ -2,14 +2,16 @@ let addtask = document.getElementById('iadd')
 let add = document.getElementById('ibadd')
 let main = document.getElementById('ilist')
 let counter = 0
+let cicon = 0
 
 function newtask(){
     let task = addtask.value
     if((task !=="") && (task !==null) && (task !==undefined)){
         ++counter
+        
 
         let newtask = `<div id="${counter}" class="item">
-            <div id="iicon" class="itemicon" onclick="checked(${counter})">
+            <div id="icon${counter}" class="itemicon" onclick="checked(${counter})">
                 &#x2610
             </div>
             <div class="itemname" onclick="checked(${counter})">
@@ -34,7 +36,7 @@ function delet(id){
 function checked(id){
     var item = document.getElementById(id)
     var classe = item.getAttribute('class')
-    let icon = document.getElementById('iicon')
+    var icon = document.getElementById(`icon${id}`)
     
     if(classe == "item"){
         item.classList.add('itemchecked')
