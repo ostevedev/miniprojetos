@@ -44,9 +44,9 @@ input#ibadd {
     font-size: 1.1em;
 }
 
-input#ibadd:hover {
-    background: rgb(0, 109, 0);
-}
+input#ibadd:hover {background: rgb(0, 109, 0);}
+
+input#ibadd:active {background: rgb(0, 88, 0);}
 
 main {
     display: flex;
@@ -95,6 +95,8 @@ main {
 }
 
 .itembuttom:hover {background: rgb(219, 0, 0);}
+
+.itembuttom:active {background: rgb(199, 1, 1);}
 
 .itemchecked {
     display: flex;
