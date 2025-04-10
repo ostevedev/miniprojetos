@@ -8,21 +8,29 @@
 </head>
 <body>
     <div id="container">
-        <div class="num">7</div>
-        <div class="num">8</div>
-        <div class="num">9</div>
-        <div class="opera">x</div>
-        <div class="num">4</div>
-        <div class="num">5</div>
-        <div class="num">6</div>
-        <div class="opera">-</div>
-        <div class="num">1</div>
-        <div class="num">2</div>
-        <div class="num">3</div>
-        <div class="opera">+</div>
-        <div class="zero">0</div>
-        <div class="num">,</div>
+        <div class="textt">CALCULADORA</div>
+        <div id="calc">
+        </div>
+        <div class="opera" >C</div>
+        <div class="opera" onclick="back()"><</div>
+        <div class="opera" onclick="insert('**')">x^</div>
+        <div class="opera" onclick="insert('/')">/</div>
+        <div class="num" onclick="insert('7')">7</div>
+        <div class="num" onclick="insert('8')">8</div>
+        <div class="num" onclick="insert('9')">9</div>
+        <div class="opera" onclick="insert('*')">x</div>
+        <div class="num" onclick="insert('4')">4</div>
+        <div class="num" onclick="insert('5')">5</div>
+        <div class="num" onclick="insert('6')">6</div>
+        <div class="opera" onclick="insert('-')">-</div>
+        <div class="num" onclick="insert('1')">1</div>
+        <div class="num" onclick="insert('2')">2</div>
+        <div class="num" onclick="insert('3')">3</div>
+        <div class="opera" onclick="insert('+')">+</div>
+        <div class="zero" onclick="insert('0')">0</div>
+        <div class="num" onclick="insert('.')">,</div>
         <div class="result">=</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
