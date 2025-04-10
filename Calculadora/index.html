@@ -11,7 +11,7 @@
         <div class="textt">CALCULADORA</div>
         <div id="calc">
         </div>
-        <div class="opera" >C</div>
+        <div class="opera" onclick="clean()">C</div>
         <div class="opera" onclick="back()"><</div>
         <div class="opera" onclick="insert('**')">x^</div>
         <div class="opera" onclick="insert('/')">/</div>
@@ -29,7 +29,7 @@
         <div class="opera" onclick="insert('+')">+</div>
         <div class="zero" onclick="insert('0')">0</div>
         <div class="num" onclick="insert('.')">,</div>
-        <div class="result">=</div>
+        <div class="result" onclick="calc()">=</div>
     </div>
     <script src="script.js"></script>
 </body>
