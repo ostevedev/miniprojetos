@@ -21,3 +21,19 @@ function calc(){
         alert('Erro')
     }
 }
+
+addEventListener('keydown', function(event){
+    if(event.key >= '0' && event.key <= '9' ) {
+        insert(event.key)
+    } if(event.key === '-' || event.key === '+' || event.key === '*' || event.key === '/'){
+        insert(event.key)
+    } if(event.key === ',' || event.key === '.'){
+        insert('.')
+    } if(event.key === 'Backspace'){
+        back()
+    } if(event.key === 'Delete'){
+        clean()
+    } if(event.key === 'Enter' || event.key === '='){
+        calc()
+    }
+})
