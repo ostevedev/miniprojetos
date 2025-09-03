@@ -1,0 +1,42 @@
+.nav-topo{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid #ececec;
+}
+
+.logo{max-width: 105px;}
+
+.navlink{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px;
+    
+}
+
+.navlink:hover{
+    background: #eeee;
+    border-radius: 20px;
+}
+
+.globo{
+    text-align: center;
+    width: 45px;
+}
+
+.bi-globe{
+    font-size: 20px;
+}
+
+.btn-login{
+    display: flex;
+    color: gray;
+    border: 1px solid gray;
+    width: 80px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
