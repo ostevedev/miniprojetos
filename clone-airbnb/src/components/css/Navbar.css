@@ -22,6 +22,11 @@
     border-radius: 20px;
 }
 
+.navbtn{
+    align-items: center;
+    text-align: center;
+}
+
 .globo{
     text-align: center;
     width: 45px;
