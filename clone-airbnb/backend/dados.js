@@ -220,6 +220,7 @@ export const acomodacoes = [
         preco: 1299,
         nota: '4,9'
     },
+    
     {
         id: 7,
         categoria: 2,

@@ -15,8 +15,8 @@ export default function Navbar() {
                         <a className='globo navlink mx-2' href=""><i className="bi bi-globe"></i></a>
                         <div className="dropdown d-flex ">
                             <a className="btn-login" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-list fs-5 ps-2 me-1"></i>
-                                <i class="bi bi-person-circle position-relative fs-2 pe-2"><span class="position-absolute top-0 start-50 badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden"></span></span></i>
+                                <i className="bi bi-list fs-5 ps-2 me-1"></i>
+                                <i className="bi bi-person-circle position-relative fs-2 pe-2"><span className="position-absolute top-0 start-50 badge border border-light rounded-circle bg-danger p-2"><span className="visually-hidden"></span></span></i>
                             </a>
 
                             <ul className="dropdown-menu mt-2 py-3 border-0 shadow">
