@@ -2,6 +2,8 @@ import React from 'react'
 import PriceSlider from './PriceSlider';
 
 import './css/ModalFilter.css';
+import ButtonGroup from './ButtonGroup';
+import CardGroup from './CardGroup';
 
 export default function ModalFilter() {
     return (
@@ -53,14 +55,37 @@ export default function ModalFilter() {
                         <section className='px-2 mb-4 border-bottom'>
                             <span className='fs-4 fw-bold'>Quartos e camas</span>
                             <p className='px-1 mt-3'>Quartos</p>
-                            
+                            <ButtonGroup buttons={["Qualquer um", "1", "2", "3", "4", "5", "6", "7", "8+"]}/>
                             <p className='px-1 mt-3'>Camas</p>
+                            <ButtonGroup buttons={["Qualquer um", "1", "2", "3", "4", "5", "6", "7", "8+"]}/>
                             <p className='px-1 mt-3'>Banheiros</p>
+                            <ButtonGroup buttons={["Qualquer um", "1", "2", "3", "4", "5", "6", "7", "8+"]}/>
+                        </section>
+                        <section className='px-2 mb-4 border-bottom'>
+                            <span className='fs-4 fw-bold'>Tipo de Propriedade</span>
+                            <CardGroup options={[
+                                {
+                                    icon: "bi bi-house-door",
+                                    text: "Casa"
+                                },
+                                {
+                                    icon: "bi bi-buildings",
+                                    text: "Apartamento"
+                                },
+                                {
+                                    icon: "bi bi-house-add",
+                                    text: "Casa de hóspedes"
+                                },
+                                {
+                                    icon: "bi bi-building",
+                                    text: "Hotel"
+                                }
+                            ]}/>
                         </section>
                     </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" className="btn btn-primary">Save changes</button>
+                    <div className="d-flex justify-content-between modal-footer">
+                        <a href="#" className='ps-2 link-dark fw-bold'>Remover filtros</a>
+                        <button type="button" className="btn btn-dark fw-bold px-4 py-3" data-bs-dismiss="modal">Mostrar X acomodações</button>
                     </div>
                 </div>
             </div>

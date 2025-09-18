@@ -1,0 +1,29 @@
+input:checked{
+    background-color: #161616 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+
+}
+
+.btnespecial{
+    padding: 10px 15px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btnespecial:hover{
+    border: 2px solid #161616;
+
+}
+
+.btnespecial.active{
+    padding: 10px 15px;
+    background: #161616;
+    color: white;
+    border: 2px solid #161616;
+    border-radius: 20px;
+    cursor: pointer;
+}
