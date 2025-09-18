@@ -13,7 +13,6 @@ export default function PriceSlider(props) {
     function changeRangeMin(e){
 
         if((parseInt(e.target.value) - max) >= -props.step){
-            console.log('Limite mínimo alcançado!')
         }else{
             setMin(parseInt(e.target.value))
             if(min == props.min){
@@ -39,7 +38,6 @@ export default function PriceSlider(props) {
 
     function changeRangeMax(e){
         if((parseInt(e.target.value) - min) <= props.step){
-            console.log('Limite máximo alcançado!')
         }else{
             setMax(parseInt(e.target.value))
             if(max == props.max){
@@ -61,6 +59,64 @@ export default function PriceSlider(props) {
         }
     },[max])
 
+    function validacao(e){
+        let inputMin = document.getElementById('inputMin')
+        let inputMax = document.getElementById('inputMax')
+
+        let valor = parseInt(e.target.value)
+
+        if(e.target.id == "inputMin"){
+            if(e.target.value == "" || e.target.value == null || e.target.value < props.min){
+                setMin(props.min)
+                setLeft("0%")
+                inputMin.value = props.min
+            } else{ if(e.target.value >= max){
+                    let corrige = max - props.step
+                    setMin(corrige)
+
+                    var totalBarra = props.max - props.min
+                    var qtSteps = valor - props.min
+
+                    setLeft(((qtSteps * 100) / totalBarra) + "%")
+
+                    inputMin.value = corrige
+                } else{
+                    setMin(valor)
+                    var totalBarra = props.max - props.min
+                    var qtSteps = valor - props.min
+
+                    setLeft(((qtSteps * 100) / totalBarra) + "%")
+                }
+            }
+        }
+
+        if(e.target.id == "inputMax"){
+            if(e.target.value == "" || e.target.value == null || valor > props.max){
+                setMax(props.max)
+                setRight("0%")
+
+                inputMax.value = props.max + "+"
+            } else{
+                if(valor <= min){
+                    let corrige = min + props.step
+                    setMax(corrige)
+
+                    var totalBarra = props.max - props.min
+                    var qtSteps = props.max - valor
+
+                    setRight(((qtSteps * 100) / totalBarra) + "%")
+                    inputMax.value = corrige
+                } else{
+                    setMax(valor)
+                    var totalBarra = props.max - props.min
+                    var qtSteps = props.max - valor
+
+                    setRight(((qtSteps * 100) / totalBarra) + "%")
+                }
+            }
+        }
+    }
+
   return (
     <div>
         <div className='slider'> 
@@ -75,14 +131,14 @@ export default function PriceSlider(props) {
                 <label className='text-muted' htmlFor="">preço mínimo</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">R$</span>
-                    <input id='inputMin' type="text" class="form-control" placeholder="Min"/>
+                    <input id='inputMin'  onBlur={validacao} type="number" class="form-control" placeholder="Min"/>
                 </div>
             </div>
             <div className='col'>
                 <label className='text-muted' htmlFor="">preço máximo</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">R$</span>
-                    <input id='inputMax' type="text" class="form-control" placeholder="Max"/>
+                    <input id='inputMax' onBlur={validacao} type="number" class="form-control" placeholder="Max"/>
                 </div>
             </div>
         </div>
