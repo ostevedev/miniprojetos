@@ -1,0 +1,43 @@
+.swiper.imgcontent{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.swiper-slide.swiperimg{
+    width: 100% !important;
+    height: 250px !important;
+    opacity: 1 !important;
+}
+
+.swiper.imgcontent .swiper-button-next{
+    box-shadow: none !important;
+    display: none;
+}
+
+.swiper.imgcontent:hover .swiper-button-next{
+    box-shadow: none !important;
+    display: flex;
+}
+
+
+.swiper.imgcontent .swiper-button-prev{
+    box-shadow: none !important;
+    display: none;
+}
+
+.swiper.imgcontent:hover .swiper-button-prev{
+    box-shadow: none !important;
+    display: flex;
+}
+
+.swiper.imgcontent .swiper-pagination-bullet-active{
+    background-color: white !important;
+}
+
+.cardimage{
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    object-position: left center !important;
+}

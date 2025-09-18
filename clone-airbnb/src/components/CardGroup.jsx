@@ -14,7 +14,7 @@ export default function CardGroup({options}) {
     <div className='row'>
         {
             options.map((item, i) => (
-                <div key={i} className='col mb-5'>
+                <div key={i} className='col my-4'>
                     <div onClick={(e) => handleClick(e,i)} className={i === clickedId ? 'cardGroup active' : 'cardGroup'}>
                         <i className={item.icon}/>
                         <p className='text-truncate'>{item.text}</p>

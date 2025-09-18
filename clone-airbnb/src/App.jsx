@@ -7,6 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import Navbar from './components/Navbar'
 import Categorias from './components/Categorias'
 import ModalFilter from './components/ModalFilter'
+import Card from './components/Card'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <div>
       <Navbar/>
       <Categorias/>
+      <Card/>
       <ModalFilter/>
     </div>
   )

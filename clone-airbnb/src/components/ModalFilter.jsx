@@ -52,7 +52,7 @@ export default function ModalFilter() {
                                 </div>
                             </div>
                         </section>
-                        <section className='px-2 mb-4 border-bottom'>
+                        <section className='px-2 pb-4 mb-4 border-bottom'>
                             <span className='fs-4 fw-bold'>Quartos e camas</span>
                             <p className='px-1 mt-3'>Quartos</p>
                             <ButtonGroup buttons={["Qualquer um", "1", "2", "3", "4", "5", "6", "7", "8+"]}/>
