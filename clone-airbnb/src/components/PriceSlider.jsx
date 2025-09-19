@@ -129,16 +129,16 @@ export default function PriceSlider(props) {
         <div className='row mt-4'>
             <div className='col'>
                 <label className='text-muted' htmlFor="">preço mínimo</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">R$</span>
-                    <input id='inputMin'  onBlur={validacao} type="number" class="form-control" placeholder="Min"/>
+                <div className="input-group mb-3">
+                    <span className="input-group-text" id="basic-addon1">R$</span>
+                    <input id='inputMin'  onBlur={validacao} type="number" className="form-control" placeholder="Min"/>
                 </div>
             </div>
             <div className='col'>
                 <label className='text-muted' htmlFor="">preço máximo</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">R$</span>
-                    <input id='inputMax' onBlur={validacao} type="number" class="form-control" placeholder="Max"/>
+                <div className="input-group mb-3">
+                    <span className="input-group-text" id="basic-addon1">R$</span>
+                    <input id='inputMax' onBlur={validacao} type="number" className="form-control" placeholder="Max"/>
                 </div>
             </div>
         </div>

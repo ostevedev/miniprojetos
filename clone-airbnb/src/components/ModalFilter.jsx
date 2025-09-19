@@ -7,7 +7,7 @@ import CardGroup from './CardGroup';
 
 export default function ModalFilter() {
     return (
-        <div className="modal fade" id="filterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="filterModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                 <div className="modal-content">
                     <div className="modal-header text-center">
