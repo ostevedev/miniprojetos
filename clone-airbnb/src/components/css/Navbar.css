@@ -45,3 +45,27 @@
     align-items: center;
     justify-content: space-around;
 }
+
+#mobile{
+    height: 70px;
+
+}
+
+.navmicon{
+    color: #ccc;
+    text-decoration: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+.navmicon.active{
+    color: #ff5a5f;
+    border-top: 3px solid #ff5a5f;
+}
+
+.navmicom:hover{
+    color: rgb(49, 131, 255);
+    text-decoration: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}

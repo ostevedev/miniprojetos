@@ -95,3 +95,11 @@
     box-shadow: 5px 10px 20px 20px white;
 }
 
+@media screen and (max-width:575px){
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-button-next{
+        display: none !important;
+    }
+}
