@@ -46,5 +46,8 @@ a:active{color: var(--corprimaria);}
     width: 100vw;
 }
 
-.cardapio{
+
+
+.card{
+    width: 250px;
 }
