@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fontep: "Alfa Slab one";
+    --fontes: "Bitter";
+    --corbg: #2E1A0E;
+    --corprimaria: #BB732C;
+    --corsecundaria: #D7BE82;
+}
+
+body{background: var(--corbg);}
+
+/* css da Navbar */
+.fontp{
+    font-family: var(--fontep);
+    color: var(--corprimaria);
+}
+
+.fonts{
+    font-family: var(--fontes);
+}
+
+.corp{
+    color: var(--corprimaria);
+}
+
+.cors{
+    color: var(--corsecundaria);
+}
+
+a{
+    color: var(--corsecundaria);
+    text-decoration: none;
+}
+
+a:hover{color: #c2864a;}
+
+a:active{color: var(--corprimaria);}
+
+/* css do Menu */
+.inicio{
+    background:fixed url(../img/paralax.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100vw;
+}
+
+.cardapio{
+}
